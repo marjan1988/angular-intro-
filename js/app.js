@@ -15,6 +15,9 @@ myApp.controller('MainCtrl', function($scope){
 			
 		};
 		
+		$scope.user.name = '';
+		$scope.user.surename = '';
+		
 		$scope.users.push(newUser);
 		
 		console.log($scope.users);
