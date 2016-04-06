@@ -24,8 +24,8 @@ myApp.controller('MainCtrl', function($scope){
 	};
 	
 	$scope.removeUser = function(i, user){
-		
-		console.log(i);
+		//remove item from array
+		$scope.users.splice(i,1);
 		
 	};
 	
