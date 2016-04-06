@@ -18,13 +18,14 @@
 		<h1>Users</h1>
 
 		<label>Enter name</label>
-		<input type="text" class="form-control">
+		<input ng-model="user.name" type="text" class="form-control">
+		
 		<label>Enter surname</label>
-		<input type="text" class="form-control">
+		<input ng-model="user.surename" type="text" class="form-control">
 		</br>
-	<div class="btn btn-block btn-primary">Add User</div>
-
 	
+		<div class="btn btn-block btn-primary" ng-click="addUser()">Add User</div>
+
 	</div>
 	
 </body>	
