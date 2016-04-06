@@ -23,9 +23,9 @@ myApp.controller('MainCtrl', function($scope){
 		console.log($scope.users);
 	};
 	
-	$scope.removeUser = function(user){
+	$scope.removeUser = function(i, user){
 		
-		console.log(user);
+		console.log(i);
 		
 	};
 	
