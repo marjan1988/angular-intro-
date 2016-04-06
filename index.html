@@ -35,6 +35,9 @@
 				<th>
 					Surename
 				</th>
+				<th>
+					Actions
+				</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -44,6 +47,9 @@
 				</td>
 				<td>
 					{{myUser.surename}}
+				</td>
+				<td>
+					<div ng-click="removeUser(user)" class="btn btn-xs btn-danger">Remove</div>
 				</td>
 			</tr>
 		</tbody>
