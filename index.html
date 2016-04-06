@@ -26,6 +26,28 @@
 	
 		<div class="btn btn-block btn-primary" ng-click="addUser()">Add User</div>
 
+	<table class="table">
+		<thead>
+			<tr>
+				<th>
+					Name
+				</th>
+				<th>
+					Surename
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="myUser in users">
+				<td>
+					{{myUser.name}}
+				</td>
+				<td>
+					{{myUser.surename}}
+				</td>
+			</tr>
+		</tbody>
+	</table>
 	</div>
 	
 </body>	
