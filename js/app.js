@@ -20,7 +20,20 @@ myApp.controller('MainCtrl', function($scope){
 		
 		$scope.users.push(newUser);
 		
-		console.log($scope.users);
+		$scope.removeSelected = function(){
+			
+			var i = $scope.users.length
+			while (i --){
+				
+				var user = $scope.users[i];
+				if(user.selected === true){
+					
+					$scope.users.splice(i,1);
+				}
+			}
+			//console.log($scope.users);
+		};
+		
 	};
 	
 	$scope.removeUser = function(i, user){

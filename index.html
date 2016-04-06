@@ -25,10 +25,13 @@
 		</br>
 	
 		<div class="btn btn-block btn-primary" ng-click="addUser()">Add User</div>
-
+	</br>
+	<div  class="btn btn-danger" ng-click="removeSelected()">Remove selected</div>
 	<table class="table">
 		<thead>
 			<tr>
+				<th>
+				</th>
 				<th>
 					Name
 				</th>
@@ -42,6 +45,9 @@
 		</thead>
 		<tbody>
 			<tr ng-repeat="myUser in users">
+				<td>
+					<input ng-model="myUser.selected"type="checkbox">
+				</td>
 				<td>
 					{{myUser.name}}
 				</td>
