@@ -1,6 +1,7 @@
-var myApp = angular.module('myApp', ['ui.router']);
+var myApp = angular.module('myApp');
 
-myApp.controller('MainCtrl', function(){
+//Created Controller
+myApp.controller('MainCtrl', function($scope){
 	
 	
 });
